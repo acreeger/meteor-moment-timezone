@@ -1,7 +1,4 @@
 // This is necessary to trick moment-timezone into believing it is in node, otherwise it doesn't fire the "onLoad" method it defines. 
-this.module={"foo":"bar"};
-this.require = {"WHATEVER":"TREVOR!"};
-
 (function(undefined) {
 
   var self = this;
