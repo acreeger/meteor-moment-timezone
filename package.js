@@ -1,5 +1,5 @@
 Package.describe({
-  summary: "Timezone support for moment.js, packaged for Meteor. See http://momentjs.com/timezone. Currently includes all data files."
+  summary: "Timezone support for moment.js, packaged for Meteor. See http://momentjs.com/timezone. Currently includes all timezone data files."
 });
 
 Package.on_use(function (api, where) {

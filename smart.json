@@ -3,7 +3,7 @@
   "description": "Timezone support for moment.js, packaged for Meteor. See http://momentjs.com/timezone",
   "homepage": "https://github.com/acreeger/meteor-moment-timezone",
   "author": "Adam Creeger <adamcreeger@gmail.com>",
-  "version": "0.0.1.2",
+  "version": "0.0.1.3",
   "git": "https://github.com/acreeger/meteor-moment-timezone",
   "packages": {
     "moment-alternative": {}
