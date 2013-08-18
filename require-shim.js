@@ -1,7 +1,13 @@
 // This is necessary to trick moment-timezone into believing it is in node, otherwise it doesn't fire the "onLoad" method it defines. 
 (function(undefined) {
 
-  var self = this;
+  var self;
+  if (typeof Package === "undefined") {
+    self = this;
+  } else {
+    self = Package["moment-alternative"];
+  }
+
   if (this.require !== undefined) {
     this.__AC_OLD_REQUIRE = this.require;
   }
