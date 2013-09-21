@@ -4,9 +4,9 @@ Package.describe({
 
 Package.on_use(function (api, where) {
   where = where || ['client', 'server']
-  api.use("moment-alternative", where);
+  api.use("moment", where);
   if (api.imply) {
-    api.imply("moment-alternative", where);
+    api.imply("moment", where);
   }
   api.add_files('require-shim.js', where);
   api.add_files('lib/moment-timezone/moment-timezone.js', where);

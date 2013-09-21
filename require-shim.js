@@ -5,7 +5,7 @@
   if (typeof Package === "undefined") {
     self = this;
   } else {
-    self = Package["moment-alternative"];
+    self = Package["moment"];
   }
 
   if (this.require !== undefined) {
