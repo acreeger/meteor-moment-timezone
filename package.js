@@ -8,8 +8,8 @@ Package.on_use(function (api, where) {
   if (api.imply) {
     api.imply("moment-alternative", where);
   }
-  api.add_files('require-shim.js', ['server']);
+  api.add_files('require-shim.js', where);
   api.add_files('lib/moment-timezone/moment-timezone.js', where);
   api.add_files('lib/moment-timezone-data/moment-timezone-data.js', where);
-  api.add_files('revert-require-shim.js', ['server']);
+  api.add_files('revert-require-shim.js', where);
 });
