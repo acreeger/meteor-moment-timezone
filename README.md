@@ -1,4 +1,4 @@
-# Moment Timezone v0.2.1 for Meteor
+# Moment Timezone v0.2.1 for Meteor [![Build Status](https://travis-ci.org/acreeger/meteor-moment-timezone.svg?branch=master)](https://travis-ci.org/acreeger/meteor-moment-timezone)
 
 [Moment Timezone](http://momentjs.com/timezone/), Timezone support for [moment.js](http://momentjs.com), packaged for Meteor. Currently includes all timezone data files.
 
