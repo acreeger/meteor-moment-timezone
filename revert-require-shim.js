@@ -14,4 +14,12 @@
   } else {
     delete this.module;
   }
+
+  if (this.__AC_OLD_EXPORTS) {
+    this.exports = this.__AC_OLD_EXPORTS;
+    delete this.__AC_OLD_EXPORTS;
+  } else {
+    delete this.exports;
+  }
+
 }).call(this);
