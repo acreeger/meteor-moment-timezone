@@ -6,6 +6,9 @@
     self = this;
   } else {
     self = Package["moment"];
+    if (!self) {
+      self = Package["mrt:moment"]
+    }
   }
 
   if (this.require !== undefined) {
@@ -19,5 +22,10 @@
     this.__AC_OLD_MODULE = this.module;
   }
   this.module = {};
+
+  if (this.exports !== undefined) {
+    this.__AC_OLD_EXPORTS = this.exports;
+  }
+  this.exports = {};
 
 }).call(this);
