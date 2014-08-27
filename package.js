@@ -1,12 +1,16 @@
 Package.describe({
-  summary: "Timezone support for moment.js, packaged for Meteor. See http://momentjs.com/timezone. Currently includes all timezone data files."
+  summary: "Timezone support for moment.js, packaged for Meteor. See http://momentjs.com/timezone.",
+  version: "0.2.1",
+  git: "https://github.com/acreeger/meteor-moment-timezone.git"
 });
 
 Package.on_use(function (api, where) {
   where = where || ['client', 'server']
-  api.use("moment", where);
+
+  var momentPackageName = !!Package.onUse ? "mrt:moment@2.8.1" : "moment"
+  api.use(momentPackageName, where);
   if (api.imply) {
-    api.imply("moment", where);
+    api.imply(momentPackageName, where);
   }
   api.add_files('require-shim.js', where);
   api.add_files('lib/moment-timezone/moment-timezone.js', where);
