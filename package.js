@@ -13,3 +13,14 @@ Package.on_use(function (api, where) {
   api.add_files('lib/moment-timezone-data/moment-timezone-data.js', where);
   api.add_files('revert-require-shim.js', where);
 });
+
+if (Package.on_test) {
+  Package.on_test(function (api) {
+    if (Package.onTest) {
+      api.use(['mrt:moment-timezone', 'tinytest', 'test-helpers'], ['client', 'server']);
+    } else {
+      api.use(['moment-timezone', 'tinytest', 'test-helpers'], ['client', 'server']);
+    }
+    api.add_files('test-mrt:moment-timezone.js', ['client', 'server']);
+  });
+}
