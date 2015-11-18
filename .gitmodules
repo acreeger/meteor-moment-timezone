@@ -1,0 +1,3 @@
+[submodule "lib/moment-timezone"]
+	path = lib/moment-timezone
+	url = git://github.com/moment/moment-timezone.git
